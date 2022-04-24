@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Test</h1>
+
+<p>this is a test.</p>
+
+<a href=https://www.w3schools.com/html/html_links.asp>Click here to learn about links<\a>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/9/95/Test_image.jpg" alt="test" width="104" height="142">
+
+</body>
+</html>
+
+
