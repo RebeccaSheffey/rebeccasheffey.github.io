@@ -16,17 +16,14 @@
   transform: translate(-50%, -50%);
 }
 .square {
-  width: 30%;
-  height: width;
-  left: 0px;
   background: #CDEFFE;
   text-align: center;
   border-style: groove;
 }
-.square, .square {
- float: left;
- padding: 0px;
- margin: 1%;
+.3grid {
+  grid-template-column: auto auto auto;
+  display: grid;
+  margin: 5px;
 }
   
 </style>
@@ -45,10 +42,12 @@ K-Creations
 </div>
 
 <div class="container">
+  <div class="3grid">
   <div class="square">
     <a href="https://rebeccasheffey.github.io/shop">  
     <h1><strong>Shop</strong></h1>
     </a>
+  </div>
   </div>
 </div>
 <div class="container">
