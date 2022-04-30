@@ -33,7 +33,15 @@
 .grid-element:hover {
   background:  #6879D1;
   color: white;
-  
+}
+#large-header {
+  min-width: 1000px;
+  width: 100%;
+}
+#small-header {
+  max-width: 999px;
+  width: 100%;
+}
 </style>
 </head>
   
@@ -44,8 +52,8 @@ K-Creations
 <body>
 
 <div class="container">
-<img src="large-header.JPG" width="100%" min-width="1000px">
-  <img src="small-header.JPG" width="100%" (min-width: 400px) (max-width: 999px)>
+<img src="large-header.JPG" class="large-header">
+  <img src="small-header.JPG" class="small-header">
      <!--placeholder-->
   <div class="centered"><h1>K-Creations</h1></div>
 </div>
