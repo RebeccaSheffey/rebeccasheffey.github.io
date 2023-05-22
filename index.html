@@ -8,6 +8,20 @@
   position: relative;
   text-align: center;
   color: black;
+  width: 100%;
+  background: #ffffff
+}
+.contains {
+  position: relative;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+.contain {
+  position: fixed;
+  text-align: center;
+  color: black;
+  width: 100%;
 }
 .centered {
   position: absolute;
@@ -17,25 +31,32 @@
 }
 .header {
   background: #C6DBFE;
-  width: 100%;
+  width: 80%;
   height: 400px;
   object-fit: cover;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.space {
+  height: 2px;
+  background: gray;
+}
+.spacer {
+  height: 400px;
 }
 .grid-three {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 15px;
-  margin-top: 15px;
+  padding-top: 15px;
   margin-left: 110px;
   margin-right: 110px;
+  padding-bottom: 15px;
 }
 .grid-four {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 24% 24% 24% 24%;
   column-gap: 15px;
-  margin-top: 15px;
   margin-left: 110px;
   margin-right: 110px;
 }
@@ -60,10 +81,19 @@ K-Creations
 
 <body>
 
-<div class="container">
+<div class="contain">
   <img class="header" src="header.JPG">
      <!--placeholder-->
-  <div class="centered"><h1>K-Creations</h1></div>
+  <div class="centered"><h1>placeholder</h1></div>
+</div>
+
+<div class="contains">
+  <div class="spacer">
+  </div>
+</div>
+<div class="container">
+  <div class="space">
+  </div>
 </div>
 
 <div class="container">

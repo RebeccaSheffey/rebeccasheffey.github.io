@@ -1,4 +1,4 @@
-  background: #C6DBFE;<!doctype html>
+<!doctype html>
 
 <html>
 
@@ -16,15 +16,43 @@
   transform: translate(-50%, -50%);
 }
 .header {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 50px;
+  position: fixed;
   object-fit: cover;
   margin-left: 100px;
   margin-right: 100px;
 }
+.tabs {
+  display: grid;
+  grid-template-columns: auto auto auto auto 60%;
+  column-gap: 0px;
+  margin-top: 40px;
+}
+.tab {
+  background: #C6DBFE;
+  text-align: center;
+  border-style: groove;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.grid-two {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 0px;
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.row-two {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  row-gap: 50px;
+  margin-top: 0px;
+}
 .grid-five {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 15% 15% 15% 15% 15%;
   column-gap: 15px;
   margin-top: 15px;
   margin-left: 110px;
@@ -36,8 +64,8 @@
   background: #C6DBFE;
   text-align: center;
   border-style: groove;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   transition: background 1s, color .6s;
 }
 .grid-element:hover {
@@ -47,8 +75,9 @@
 .filter {
   height: 1000px;
   width: 100px;
+  text-align: left;
   position: fixed;
-  left:0;
+  left:20;
 }
 
 </style>
@@ -61,35 +90,49 @@ K-Creations
 <body>
 
 <div class="container">
-  <img class="header" src="header.JPG">
-     <!--placeholder-->
-  <div class="centered"><h1>K-Creations</h1></div>
-</div>
+  <div class="grid-two">
 
-<div class="container">
-  <div class="filter">
-    <h4>Group</h4>
-    <h4>Category</h4>
-    <h4>Official</h4>
-    <h4>Pre-order</h4>
+  <div class="container">
+    <div class="filter">
+      <h4>Group</h4>
+      <h4>Category</h4>
+      <h4>Official</h4>
+      <h4>Pre-order</h4>
+    </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="grid-five">
-    <a href="https://rebeccasheffey.github.io/shop" class="grid-element">  
-      <h1><strong>Shop</strong></h1>
-    </a>
-    <a href="https://rebeccasheffey.github.io/projects" class="grid-element">  
-      <h1><strong>Trade</strong></h1>
-    </a>
-    <a href="https://rebeccasheffey.github.io/about" class="grid-element">  
-      <h1><strong>Info</strong></h1>
-    </a>  
-    <div class="blank"> 
-    </div> 
-    <div class="blank"> 
-    </div> 
+  <div class="container">
+    <div class="row-two">
+    <div class="container">
+      <div class="header">
+      <div class="tabs">
+        <div class="tab"><h5>Everything</h4></div>
+        <div class="tab"><h5>Selling</h4></div>
+        <div class="tab"><h5>Trading</h4></div>
+        <div class="tab"><h5>Gos</h4></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid-five">
+        <a href="https://rebeccasheffey.github.io/shop" class="grid-element">  
+          <h1><strong>Shop</strong></h1>
+        </a>
+        <a href="https://rebeccasheffey.github.io/projects" class="grid-element">  
+          <h1><strong>Trade</strong></h1>
+        </a>
+        <a href="https://rebeccasheffey.github.io/about" class="grid-element">  
+          <h1><strong>Info</strong></h1>
+        </a>  
+        <div class="blank"> 
+        </div> 
+        <div class="blank"> 
+        </div> 
+      </div>
+    </div>
+    </div>
+  </div>
   </div>
 </div>
 
